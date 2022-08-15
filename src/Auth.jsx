@@ -5,20 +5,10 @@ import Logout from './Logout.jsx';
 class Auth extends Component {
   constructor(props) {
     super(props);
-    this.state = {
+   this.state = {
       isLoggedIn: false,
     }
   }
-  /*onLogin = () => {
-    this.setState({
-      isLoggedIn: true,
-    });
-  }
-  onLogout = () => {
-    this.setState({
-      isLoggedIn: false,
-    });
-  }*/
 
   render() {
     let button;

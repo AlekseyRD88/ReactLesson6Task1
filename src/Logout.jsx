@@ -3,6 +3,9 @@ import React, { Component } from 'react';
 class Logout extends Component {
   constructor(props) {
     super(props);
+    this.state = {
+      isLoggedIn: true,
+    }
   }
   onLogout = () => {
     this.setState({
@@ -10,7 +13,7 @@ class Logout extends Component {
     });
   }
   render() {
-    <button onClick={this.onLogin}>Login</button>;
+    return <button onClick={this.onLogin}>Login</button>;
   }
 }
 
