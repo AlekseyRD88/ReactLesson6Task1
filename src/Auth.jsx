@@ -5,17 +5,27 @@ import Logout from './Logout.jsx';
 class Auth extends Component {
   constructor(props) {
     super(props);
-   this.state = {
+    this.state = {
       isLoggedIn: false,
     }
   }
+  handleLoginClick = () => {
+    this.setState({
+      isLoggedIn: true
+    })
+  }
 
+  handleLogoutClick = () => {
+    this.setState({
+      isLoggedIn: false
+    })
+  }
   render() {
     let button;
     if (this.state.isLoggedIn) {
-      button = <Login />;
+      button = <Logout onClick={this.handleLogoutClick} />;
     } else {
-      button = <Logout />;
+      button = <Login onClick={this.handleLoginClick}/>;
     }
     return (
       <div className="panel">
