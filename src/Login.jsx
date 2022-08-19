@@ -2,7 +2,7 @@ import React from 'react';
 
 function Login(props) {
   return (
-    <button onClick={props.onClick}>
+    <button onClick={props.onLogin}>
       Login
     </button>
   )
